@@ -3,19 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Masonry with Overlay and Lightbox</title>
   
-  
+  <!--CSS import -->
   <link rel='stylesheet prefetch' href='css/featherlight.min.css'>
-
-      <link rel="stylesheet" href="css/masonryandLightbox.css">
-
+  <link rel="stylesheet" href="css/masonryandLightbox.css">
   
 </head>
-
 <body>
-
-  <head><meta name="viewport" content="width=device-width, initial-scale=1"></head>
 <div id="container">
     <!-- This will make sure our size stays right when using Masonry -->
   <div class="gutter-sizer"></div>
@@ -28,9 +24,9 @@
         <span class="overlay" href="#">
             
             <div class="cta-container">
-                <p>Shop<br /> &middot;<br />
-                <a href="#">CTA HERE</a><br />
-                <a href="#">CTA HERE</a></p>
+                <p>custom text<br /> &middot;<br />
+                <a href="#">link 1</a><br />
+                <a href="#">link 2</a></p>
             </div>
             <div class="description">
                 <p>
@@ -312,23 +308,24 @@
             </div>
         </span>
     </div>
+	<div class="item">
+        <!-- An image, of course! -->
+        <img src="/images/set1/21.jpg" class="image">
+        <!-- This is the overlay for the hover -->
+        <span class="overlay" href="#">
+            
+            <div class="description">
+                <p>
+					test
+                </p>
+            </div>
+        </span>
+    </div>
 </div>
-
-<div class='back-to-top-container'>
-    <a href="#main"> Back to Top</a>
-</div>
-  <script src='js/jquery.min.js'></script>
-<script src='js/masonry.pkgd.js'></script>
-<script src='js/featherlight.min.js'></script>
-<script src='js/jquery.smooth-scroll.js'></script>
-
-  
-
-    <script  src="js/masonryandLightbox.js"></script>
-
-
-
-
+	<script src='js/jquery.min.js'></script>
+	<script src='js/masonry.pkgd.js'></script>
+	<script src='js/featherlight.min.js'></script>
+	<script src='js/jquery.smooth-scroll.js'></script>
+	<script  src="js/masonryandLightbox.js"></script>
 </body>
-
 </html>
