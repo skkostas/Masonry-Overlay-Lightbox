@@ -1,0 +1,173 @@
+html {
+  overflow-y: scroll;
+}
+
+/* ---- grid ---- */
+
+* {
+  box-sizing: border-box;
+}
+
+div#main:after,
+div#container:after,
+div#container2:after,
+div.back-to-top-container:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div#main {
+  margin-bottom: 16px;
+}
+
+div#main .inner {
+  background: #fcfaf6;
+  text-align:center;
+  padding: 8px;
+  color: #999999;
+}
+
+div#main .inner h2 {
+  border-bottom: 0;
+  font-size: 2.5em;
+  font-style: italic;
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+
+div#main .inner p {
+  font-size: 1em;
+  font-style: italic;
+}
+
+div#main .inner p a,
+div#main .inner p a:visited {
+  color: #999999;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+div#main .inner p a:hover {
+  color: #e0b2aa;
+}
+
+.cta-container {
+  display:table;
+  width: 100%;
+  height: 90%;
+}
+
+.cta-container p {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  margin:5px 0;
+  font-family: arial, sans-serif;
+  line-height: 1.6;
+}
+
+.l-content .ct .cta-container p {
+    font-family: arial, sans-serif;
+}
+
+.cta-container p a,
+.cta-container p a:visited {
+  text-decoration: underline;
+  color: #666666;
+}
+
+.cta-container p a:hover {
+  color: #e0b2aa;
+}
+
+.grid-sizer, .item {
+  width: 19%;
+
+}
+
+#container {
+/*  background: #EEE;*/
+  /* center */
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.gutter-sizer {
+  width: 1%;
+}
+
+.item img {
+  max-width: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 233, 229, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0; 
+    text-decoration: none;
+    color: #666666;
+    font-family: arial, sans-serif;
+    display: none;
+}
+
+
+.overlay .title {
+    text-align: center;
+    font-size: 18px;
+    background: #6d6d6d;
+    margin: 0px 0 5px;
+}
+
+.overlay .description {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    background-color: rgba(0,0,0,0.25);
+    width: 100%;
+    margin: 0;
+}
+
+.overlay .description a, .overlay .description a:visited {
+  color: #f8ede9;
+  text-decoration: none;
+  display:block;
+}
+
+.overlay .description a:hover {
+  color: #666666;
+}
+
+.overlay .description p {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+/*.overlay .description p {
+    margin: 10px;
+}*/
+
+.item:hover .overlay {
+    display: block;
+}
+
+div.back-to-top-container {
+  text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .grid-sizer, .item {
+    width: 24%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .grid-sizer, .item {
+    width: 49%;
+  }
+}
